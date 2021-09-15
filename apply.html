@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Demonstrates some basic HTML content elements and CSS" />
+    <meta name="keywords" content="html, css" />
+    <meta name="author" content="Jordan Siow"  />
+
+    <link rel = "stylesheet" type = "text/css" href = "styles/style.css"/>
+    <!-- <script type="application/javascript" src="scripts/apply.js"></script> -->
+
+    <title>Apply </title>
+
+</head>
+
+<body>
+
+<header>
+
+	<section class="front_title">
+
+		<p> Company XIT <a href="index.html"><img src="styles/images/logo.png" alt="logo" height="70" width="250"/></a>
+        </p>
+
+	</section>
+
+    <section class="topnav">
+
+        <table>
+            <tr>
+                
+
+                <td >
+                    <a href="index.html">Main</a>
+                </td>
+
+                <td >
+                    <a href="jobs.html">Jobs</a>
+                </td>
+
+                <td id="current">
+                    <a href="apply.html">Apply</a>
+                </td>
+
+                <td>
+                    <a href="about.html">About</a>
+                </td>
+
+                <td>
+                    <a href="enhancements2.html">Enhancements</a>
+                </td>
+
+            </tr>
+        </table>
+    </section>
+</header>
+<br/>
+
+<main id="main_container">
+
+    <section id="style_apply">
+
+        <h2>Submit your Application!</h2>
+        <!-- action="https://mercury.swin.edu.au/it000000/formtest.php" -->
+        <form method="post" id="apply_form" >
+            <p><span id="job_id_error" class="error"></span></p>
+            <p><label for="jobid">Job Reference Number</label>
+            <input type="text" name="jobid" id="jobid" maxlength="5" pattern="[0-9]{5}" /></p>
+
+            <p><span id="firstname_error" class="error"></span></p>
+            <p><label for="firstname">First Name</label>
+            <input type ="text" name="First Name" id="firstname" maxlength="20" pattern="[a-zA-Z]+" /></p>
+
+            <p><span id="lastname_error" class="error"></span></p>
+            <p><label for="lastname">Last Name</label>
+            <input type ="text" name="Last Name" id="lastname" maxlength="20" pattern="[a-zA-Z]+" /></p>
+            <br/>
+
+            <p><span id="dateofbirth_error" class="error"></span></p>
+            <p><label for="dateofbirth">Date of Birth</label>
+            <input type="date" name="Date of Birth" id="dateofbirth" /></p>
+            <br/>
+            <br/>
+
+            
+            <label>Gender</label>
+            <p><span id="gender_error" class="error"></span></p>
+            <fieldset id="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="Gender"  value="male" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="Gender" value="female"/>
+                <label for="other">Others</label>
+                <input type="radio" id="other" name="Gender" value="other"/>
+                <label for="rathernotsay">Rather Not Say</label>
+                <input type="radio" id="rathernotsay" name="Gender" value="rathernotsay"/>
+            </fieldset>
+            <br/>
+
+            <div id="fieldset_label">
+                <label>Address Information</label>
+            </div>
+            <fieldset>
+                <p><span id="streetaddress_error" class="error"></span></p>
+                <p><label for="streetaddress">Street address</label>
+                <input type="text" name="Address" id="streetaddress" maxlength="40" "/></p>
+
+                <p><span id="suburb_error" class="error"></span></p>
+                <p><label for="suburb">Suburb/town</label>
+                <input type="text" name= "Suburb" id="suburb" maxlength="40" /></p>
+
+                <p><span id="state_error" class="error"></span></p>
+                <p><label for="state">State</label>
+                <select  id="state" name="State">
+                    <option value="">Please select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select></p>
+
+                <p><span id="postcode_error" class="error"></span></p>
+                <p><label for="postcode">Postcode</label>
+                <input type="text" name= "Postcode" id="postcode" maxlength="4" pattern="\d{4}"  placeholder="Postcode"/></p>
+            </fieldset>
+            <br/>
+
+            <p><span id="email_error" class="error"></span></p>
+            <p><label for="email">Email</label>
+            <input type="text" name="Email Address" id="email" /></p>
+
+            <p><span id="phonenumber_error" class="error"></span></p>
+            <p><label for="phonenumber">Phone Number</label>
+            <input type="text" name="Phone Number" id="phonenumber" maxlength="12" pattern="[0-9]{8-12}" ></p>
+
+            <label>Skill list</label>
+            <fieldset>
+                <p><span id="skill_error" class="error"></span></p>
+                <label for="skill1">Web development languages</label>
+                <input type="checkbox" id="skill1" name="Skill 1" value="skill"/>
+                <label for="skill2">Data Management abilities</label>
+                <input type="checkbox" id="skill2" name="Skill 2" value="skill"/>
+                <label for="skill3">Others</label>
+                <input type="checkbox" id="skill3" name="Other" value="skill"/>
+                <br/>
+                <br/>
+                <section>
+                    <label for="comm" style="display:block">Other skillset</label>
+                    <textarea class="comments" id="comm" name="Comments" rows="5" cols="50" placeholder="Other skillsets..."></textarea>
+                 </section>
+            </fieldset>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="align_center">
+                <p><span id="error_check" class="error"></span></p>
+                <input type="submit" value="Submit Application"/>
+                <input type="reset" value="Reset Application form"/>
+            </div>
+
+        </form>
+    </section>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <footer class = "footer_text">
+        <hr/>
+        <p>
+            <strong>&#169;</strong>
+            <a class="footer_text" href="http://www.swinburne.edu.au/">
+                Swinburne Universty of Technology
+            </a>
+        </p>
+
+        <p>  &#160;
+            &#160;
+            <strong>Done by:</strong> <a class="footer_text" href="mailto:103173691@student.swin.edu.au">
+                Jordan Siow</a>
+        </p>
+
+    </footer>
+
+</main>
+</body>
+</html>

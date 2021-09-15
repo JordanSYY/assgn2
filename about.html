@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Demonstrates some basic HTML content elements and CSS" />
+    <meta name="keywords" content="html, css" />
+    <meta name="author" content="Jordan Siow"  />
+
+    <link rel = "stylesheet" type = "text/css" href = "styles/style.css"/>
+
+    <title>About </title>
+
+</head>
+
+<body>
+
+<header>
+
+	<section class="front_title">
+
+		<p> Company XIT <a href="index.html"><img src="styles/images/logo.png" alt="logo" height="70" width="250"/></a>
+        </p>
+
+	</section>
+
+    <section class="topnav">
+
+        <table>
+            <tr>
+                
+
+                <td >
+                    <a href="index.html">Main</a>
+                </td>
+
+                <td >
+                    <a href="jobs.html">Jobs</a>
+                </td>
+
+                <td>
+                    <a href="apply.html">Apply</a>
+                </td>
+
+                <td  id="current">
+                    <a href="about.html">About</a>
+                </td>
+
+                <td>
+                    <a href="enhancements2.html">Enhancements</a>
+                </td>
+
+            </tr>
+        </table>
+    </section>
+</header>
+<br/>
+
+<main id="main_container">
+
+    <section id="about_main">
+
+        <dl>
+
+            <dt>Name</dt>
+            <dd>Jordan Siow</dd>
+
+            <dt>Student Number</dt>
+            <dd>103173691</dd>
+
+            <dt>Tutor's Name</dt>
+            <dd>Bo Li</dd>
+
+            <dt>Course Name</dt>
+            <dd>Bachelor's Computer Science</dd>
+
+            <dt>Photo of Me</dt>
+            <dd>
+                <img src=images/myphoto.jpg height="300" width="350" class="roundrectangle" alt="Jordan Siow Photo" />
+            </dd>
+
+
+            <dt>My Timetable</dt>
+            <dd>
+            <section class="timetable" id="timetable">
+
+                <table>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+
+                    <tr>
+                        <td id="morning" rowspan="8"></td>
+                        <td>8:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>8:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>9:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>9:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>10:00</td>
+                        <td rowspan="2">
+                            <section class="sectionBox">
+                                <a href="#subinfo_1">TNE 10005</a>
+                            </section>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>10:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>11:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td id="afternoon" rowspan="18"></td>
+                        <td>12:00</td>
+                        <td rowspan="4">
+                            <section class="sectionBox">
+                                <a href="#subinfo_2">TNE 10006</a>
+                            </section>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>12:30</td>
+                        <td rowspan="4">
+                            <section class="sectionBox">
+                                <a href="#subinfo_5">COS 20015</a>
+                            </section>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>1:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>1:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2:00</td>
+                        <td rowspan="2">
+                            <section class="sectionBox">
+                               <a href="#subinfo_3"> COS 10011 </a>
+                            </section>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2:30</td>
+                        <td rowspan="4">
+                            <section class="sectionBox">
+                                <a href="#subinfo_6">COS 10011</a>
+                            </section>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="6">
+                            <section class="sectionBox">
+                                <a href="#subinfo_7">TNE 10006</a>
+                            </section>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>3:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>4:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>4:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>5:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>5:30</td>
+                        <td rowspan="6">
+                            <section class="sectionBox">
+                                <a href="#subinfo_4">TNE 10005</a>
+                            </section>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>6:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>6:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>7:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>7:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>8:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>8:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <dt>Contact</dt>
+            <dd><a href="mailto:103173691@student.swin.edu.au">Jordan Siow</a></dd>
+            
+         </dl>
+    </section>
+
+
+            <section id="subinfo_1" class="popup">
+                <section class ="align_center"> <a href="#close" title="Close" class="close">X</a>
+                        <h2>Network Adminstration</h2>
+                        <h3>Lecture QnA</h3>
+                        <p>Time: Mondays 10:00am - 11:00am</p>
+                    </section>
+                </section>
+
+            <section id="subinfo_2" class="popup">
+                <section class ="align_center"> <a href="#close" title="Close" class="close">X</a>
+                        <h2>Network Switching and Routing</h2>
+                        <h3>Lecture QnA</h3>
+                        <p>Time: Mondays 12:00pm - 2:00pm</p>
+                    </section>
+                </section>
+                 
+            <section id="subinfo_3" class="popup">
+                <section class ="align_center"> <a href="#close" title="Close" class="close">X</a>
+                        <h2>Creating Web Application</h2>
+                        <h3>Lecture QnA</h3>
+                        <p>Time: Mondays 2:00pm - 3:00pm</p>
+                    </section>
+                </section>
+
+            <section id="subinfo_4" class="popup">
+                <section class ="align_center"> <a href="#close" title="Close" class="close">X</a>
+                        <h2>Network Adminstration</h2>
+                        <h3>Lab</h3>
+                        <p>Time: Mondays 5:30pm - 8:30pm</p>
+                    </section>
+                </section>
+
+            <section id="subinfo_5" class="popup">
+                <section class ="align_center"> <a href="#close" title="Close" class="close">X</a>
+                        <h2>Fundamentals of Data Management</h2>
+                        <h3>Lab</h3>
+                        <p>Time: Tuesdays 12:30pm - 2:30pm</p>
+                    </section>
+                </section>
+
+            <section id="subinfo_6" class="popup">
+                <section class ="align_center"> <a href="#close" title="Close" class="close">X</a>
+                        <h2>Creating Web Application</h2>
+                        <h3>Lab</h3>
+                        <p>Time: Tuesdays 2:30pm - 4:30pm</p>
+                    </section>
+                </section>
+
+            <section id="subinfo_7" class="popup">
+                <section class ="align_center"> <a href="#close" title="Close" class="close">X</a>
+                        <h2>Network Switching and Routing</h2>
+                        <h3>Lab</h3>
+                        <p>Time: Fridays 2:30pm - 5:30pm</p>
+                    </section>
+                </section>
+            
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+
+
+    <footer class = "footer_text">
+        <hr/>
+        <p>
+            <strong>&#169;</strong>
+            <a class="footer_text" href="http://www.swinburne.edu.au/">
+                Swinburne Universty of Technology
+            </a>
+        </p>
+
+        <p>  &#160;
+            &#160;
+            <strong>Done by:</strong> <a class="footer_text" href="mailto:103173691@student.swin.edu.au">
+                Jordan Siow</a>
+        </p>
+
+    </footer>
+</main>
+</body>
+</html>
+
